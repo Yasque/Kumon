@@ -1,0 +1,47 @@
+
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>"SISTEMA MISS **INICIO DE SESIÓN** "</title>
+	<link rel="stylesheet"  th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body bgcolor="#F2F5A9">
+	<div id="background">
+		<div id="page">
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="contact" class="body">
+							<h5>" SISTEMA MISS "</h5>
+							<h3>Registre por favor ingrese su Usuario y contraseña</h3>
+							<br></br>
+							<form th:action="@{/j_spring_security_check}" method="post">
+           					<table>
+									<tbody background="../../images/bg-pattem.jpg">
+									<tr>
+									<td colspan="2"><b><font face="Arial black" size="5">"MISS MARICARMEN"</font></b></td>
+									</tr>
+										<tr>
+											<td>Usuario:</td>
+											<td><input type="text" placeholder="usuario" name="j_username" id="j_username"></input></td>
+										</tr> <tr>
+											<td>Password :</td>
+											<td><input type="password" placeholder="password" name="j_password" id="j_password"></input></td>
+										</tr> 
+										 <tr>
+											<td></td>
+											<td><input type="submit" value="ENVIAR"></input></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

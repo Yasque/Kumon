@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>"SISTEMA MISS **INVENTARIO** "</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a></li>
+						<li>
+							<a href="alumnos.html">Alumnos</a>
+						</li>
+						<li class="selected">
+							<a href="inventario.html">Inventario</a>
+						</li>
+						<li>
+							<a href="pedido.html">Pedido</a>
+						</li>
+						<li>
+							<a href="contacto.html">Contacto</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="contact" class="body">
+							<h5>Existencia de material en el centtro</h5>
+							<form  th:action="@{/j_spring_security_check}" action="index.html" method="post">
+								<table>
+									<tbody>
+										<tr>
+											<td>Nivel:</td>
+											<td><select name="nivel" class="txtfield">
+												<option>seleccione la opción</option>
+												<option>7A</option>
+												<option>6A</option>
+												<option>5A</option>
+												<option>4A</option>
+												<option>3A</option>
+												<option>A</option>
+												<option>B</option>
+												<option>C</option>
+												<option>D</option>
+												<option>E</option>
+												<option>F</option>
+												<option>G</option>
+												<option>H</option>
+												<option>I</option>
+												<option>J</option>
+												<option>K</option>
+												<option>L</option>
+												<option>M</option>
+												<option>N</option>
+												<option>L</option>
+												<option>O</option>
+												</select></td>
+										</tr> <tr>
+											<td>Cantidad de hojas</td>
+											<td><input type="text" placeholder="numero de hojas" name="cantidad" value="" class="txtfield"/></td>
+										</tr> 
+										<tr>
+											<td><input type="submit" value="CONSULTAR"/></td>
+											<td><input type="submit" value="EDITAR" /></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

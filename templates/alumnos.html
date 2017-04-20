@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<meta charset="UTF-8"/>
+	<title>"SISTEMA MISS **ALUMNOS** "</title>
+	
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="index.html">Inicio</a></li>
+						<li class="selected">
+							<a href="alumnos.html">Alumnos</a>
+						</li>
+						<li>
+							<a href="inventario.html">Inventario</a>
+						</li>
+						<li>
+							<a href="pedido.html">Pedido</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="contact" class="body">
+							<h5>Registro de Alumnos</h5>
+							<h3>Registre por favor el numero de alumnos, que tenga por cada nivel</h3>
+							<br></br>
+							<form  th:action="@{/alumno/guardar}"  method="POST">
+								<table>
+									<tbody>
+										<tr>
+											<td>Nivel:</td>
+											
+										 	<td>
+										 	<!-- recuerda poner un name a cada cuadro de texto o select que enviara informacion a la base -->
+										 	<select  name="nivel" class="txtfield"  >
+												<option>seleccione la opción</option>
+												<option>7A</option>
+												<option>6A</option>
+												<option>5A</option>
+												<option>4A</option>
+												<option>3A</option>
+												<option>A</option>
+												<option>B</option>
+												<option>C</option>
+												<option>D</option>
+												<option>E</option>
+												<option>F</option>
+												<option>G</option>
+												<option>H</option>
+												<option>I</option>
+												<option>J</option>
+												<option>K</option>
+												<option>L</option>
+												<option>M</option>
+												<option>N</option>
+												<option>L</option>
+												<option>O</option>
+												</select></td>
+										</tr> <tr>
+											<td>Cantidad</td>
+											<td><input type="text" name="cantidad" placeholder="numero de alumnos" class="txtfield"  /></td>
+										</tr> 
+										<tr>
+										<td></td>
+											<td><input type="submit" value="GUARDAR DATOS"/></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
